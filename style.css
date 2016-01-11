@@ -94,6 +94,8 @@ ul {
 	
 	li {
 		display: inline;
+		margin-left: 6px;
+		margin-right: 6px;
 	}
 	
 	header {
