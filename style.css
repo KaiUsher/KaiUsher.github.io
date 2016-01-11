@@ -64,19 +64,18 @@ ul {
 
 .content-wrap section {
 	opacity: 0;
-	transition: all 0.8s ease-in-out;
-	
+	transition: all 0.8s ease-in-out;	
 }
 
 @media (max-width: 1380px) {
 	
 	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		display: block;
+		/*flex-direction: column;
+		justify-content: space-between;*/
 		text-align: center;
 		margin: 0 auto;
-		widht: 100%;
+		width: 100%;
 	}
 	
 	ul {
@@ -85,12 +84,17 @@ ul {
 	
 	header {
 		margin: 0 auto;
+		width: 95%;
 	}
 	
 	.content-wrap {
 		text-align: center;
 		margin: 0 auto;
 	}
+	
+	.content-wrap section {
+		margin: 0 auto;	
+}
 }
 
 	
