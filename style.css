@@ -14,6 +14,7 @@ body {
 
 header {
 	margin-left: 60px;
+	width: 700px;
 }
 
 h1 {
@@ -42,7 +43,7 @@ ul {
 
 .content-wrap {
 	text-align: right;
-	width: 900px;
+	/*width: 670px;*/
 	margin-right: 60px;
 	margin-top: 40px;
 	font-size: 20px;
@@ -50,7 +51,7 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	height: 90vh;
+	height: 100%;
 }
 
 .content-wrap a{
@@ -66,3 +67,30 @@ ul {
 	transition: all 0.8s ease-in-out;
 	
 }
+
+@media (max-width: 1380px) {
+	
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		margin: 0 auto;
+		widht: 100%;
+	}
+	
+	ul {
+	text-align: center;
+	}
+	
+	header {
+		margin: 0 auto;
+	}
+	
+	.content-wrap {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+	
