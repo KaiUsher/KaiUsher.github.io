@@ -10,6 +10,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	height: 90vh;
 }
 
 header {
@@ -76,6 +77,7 @@ ul {
 		text-align: center;
 		margin: 0 auto;
 		width: 100%;
+		height: 90vh;
 	}
 	
 	ul {
@@ -85,16 +87,29 @@ ul {
 	header {
 		margin: 0 auto;
 		width: 95%;
+		margin-bottom: 30px;
 	}
 	
 	.content-wrap {
 		text-align: center;
+		font-size: 15px;
 		margin: 0 auto;
+		width: 80%;
 	}
 	
-	.content-wrap section {
-		margin: 0 auto;	
-}
+	.content-wrap section {	
+		position: absolute;
+		left: 50px;
+		right: 50px;
+	}
+	
+	h1 {
+		font-size: 60px;
+	}
+	
+	.nav a {
+		font-size: 30px;
+	}
 }
 
 	
