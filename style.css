@@ -47,6 +47,7 @@ h1 {
 
 .nav a:hover {
 	color: #b30000;
+	letter-spacing: 8px;
 }
 
 .nav a:active {
