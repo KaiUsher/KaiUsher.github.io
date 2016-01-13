@@ -45,6 +45,15 @@ h1 {
 	outline: 0;
 }
 
+.nav a:hover {
+	color: #b30000;
+}
+
+.nav a:active {
+	color: #660000;
+	
+}
+
 ul {
 	list-style: none;
 	text-align: left;
@@ -146,5 +155,14 @@ ul {
 	.content-wrap {
 		font-size: 17px;
 	}
+	
+	h1 {
+		font-size: 70px;
+	}
+	
+	.nav a {
+		font-size: 30px;
+	}
+	
 
 }
