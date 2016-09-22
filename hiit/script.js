@@ -29,6 +29,7 @@ function workTimerFunc(workSeconds,restTimer,repCount,repCountTracker,setCount,s
 	var id;
 	var workCounter = workSeconds;
 	
+	document.getElementById("timerCount").style.fontSize = "200px";
 	document.getElementById("timerCount").innerHTML = workCounter.toString();
 	document.getElementById("timerCount").style.color = 'green';
 	document.getElementById("activity").innerHTML = "exercise";
@@ -50,6 +51,7 @@ function restTimerFunc(restSeconds,repCount,workSeconds,repCountTracker,setCount
 	var id;
 	var restCounter = restSeconds;
 	
+	document.getElementById("timerCount").style.fontSize = "200px";
 	document.getElementById("timerCount").innerHTML = restCounter.toString();
 	document.getElementById("timerCount").style.color = 'red';
 	document.getElementById("activity").innerHTML = "rest";
