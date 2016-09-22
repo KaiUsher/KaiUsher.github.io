@@ -64,7 +64,7 @@ function restTimerFunc(restSeconds,repCount,workSeconds,repCountTracker,setCount
 			if ((setCountTracker == setCount) && (repCountTracker == repCount)){
 				clearInterval(id);
 				document.getElementById("timerCount").innerHTML = "END";
-				document.getElementById("timerCount").style.fontSize = "150px";
+				document.getElementById("timerCount").style.fontSize = "100px";
 				document.getElementById("timerCount").style.color = '#262626';
 			} else {
 				clearInterval(id);
