@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HIIT Timer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="container-fluid content">
+  
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1>HIIT Timer</h1>
+		</br>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-sm-4 col-sm-offset-2 form-group">
+        <label for="workout">Workout interval:</label>
+        <input class="form-control" id="workout" placeholder="How many seconds are you working for?" type="text" required>
+      </div>
+      <div class="col-sm-4 form-group">
+        <label for="rest">Rest interval:</label>
+        <input class="form-control" id="rest" name="name" placeholder="How many seconds are you resting for?" type="text" required>
+      </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-sm-4 col-sm-offset-2 form-group">
+        <label for="reps">Reps:</label>
+        <input class="form-control" id="reps" name="name" placeholder="How many reps in a set?" type="text" required>
+      </div>
+	  <div class="col-sm-4 form-group">
+        <label for="sets">Sets:</label>
+        <input class="form-control" id="sets" name="name" placeholder="How many sets?" type="text" required>
+      </div>
+    </div>
+	
+	</br>
+	
+	<button type="button" class="btn col-sm-4 col-sm-offset-4" onClick="startTimer()">Begin HIIT Session</button>
+	
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 text-center">
+			<p class="timerCount" id="timerCount">40</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 text-center">
+			<p class="context" id="context">seconds of <span class="activity" id="activity">exercise</span> <span class="repContext" id="repContext">1</span> of set <span class="setContext" id="setContext">1</span></p>
+		</div>
+	</div>
+	
+  </div>
+  
+  <script type="text/javascript" src="script.js"></script>
+
+  <!--<div class="container-fluid text-center bg-grey">
+    <h2>Key Points</h2>
+    <h3>What we pride our work on</h3>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-book logo-small"></span>
+        <h4>PROFESSIONAL STANDARDS</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-heart logo-small"></span>
+        <h4>LOVE</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-time logo-small"></span>
+        <h4>EFFICIENCY</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="col-sm-3">
+        <span class="glyphicon glyphicon-sunglasses logo-small"></span>
+        <h4>QUALITY</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center">
+    <h2>Portfolio</h2>
+    <h3>Some stuff we made, yo.</h3>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images\port1.jpg" alt="1">
+          <p><strong>Portfolio 1</strong></p>
+          <p>Here is an example of our work.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images\port2.jpg" alt="2">
+          <p><strong>Portfolio 2</strong></p>
+          <p>Here is an example of our work.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images\port3.jpg" alt="3">
+          <p><strong>Portfolio 3</strong></p>
+          <p>Here is an example of our work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-grey">
+    <h2 class="text-center">Contact Us</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-1">
+        <h4>Contact us and we'll get back to you within 24 hours.</h4>
+        <p><span class="glyphicon glyphicon-map-marker logo-smaller"></span> Wherever you like.</p>
+        <p><span class="glyphicon glyphicon-phone logo-smaller"></span> 07145 784632</p>
+        <p><span class="glyphicon glyphicon-envelope logo-smaller"></span> email@emailaddress.com</p>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+</body>
+</html>

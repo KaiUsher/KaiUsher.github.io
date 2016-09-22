@@ -1,0 +1,37 @@
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+body {
+  background-color: #f7f7f7;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.container-fluid {
+    padding: 15px 15px;
+}
+
+.timerCount{
+	font-size: 200px;
+	color: red;
+}
+
+.context{
+	margin-top: -40px;
+	font-size: 20px;
+}
+
+.setContext{
+	font-size: 25px;
+	color: #262626;
+	font-weight: bold;
+}
+
+.repContext{
+	font-size: 25px;
+	color: #262626;
+	font-weight: bold;
+}
