@@ -35,3 +35,13 @@ body {
 	color: #262626;
 	font-weight: bold;
 }
+
+.credit{
+	color: #cccccc;
+	font-size:10px;
+	font-style: italic;
+}
+
+a{
+	color: #808080;
+}
