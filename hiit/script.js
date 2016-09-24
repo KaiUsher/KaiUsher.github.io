@@ -17,6 +17,7 @@ function startTimer(){
 	
 	repCountTracker = repCountTracker + 1;
 	
+	document.getElementById("context").innerHTML = 'seconds of <span class="activity" id="activity">exercise</span> <span class="repContext" id="repContext"></span> of set <span class="setContext" id="setContext"></span>'; 
 	document.getElementById("repContext").innerHTML = repCountTracker;
 	document.getElementById("setContext").innerHTML = setCountTracker;
 	
@@ -66,7 +67,8 @@ function restTimerFunc(restSeconds,repCount,workSeconds,repCountTracker,setCount
 			if ((setCountTracker == setCount) && (repCountTracker == repCount)){
 				clearInterval(id);
 				document.getElementById("timerCount").innerHTML = "END";
-				document.getElementById("timerCount").style.fontSize = "100px";
+				document.getElementById("context").innerHTML = "You smashed it!";
+				document.getElementById("timerCount").style.fontSize = "120px";
 				document.getElementById("timerCount").style.color = '#262626';
 			} else {
 				clearInterval(id);
