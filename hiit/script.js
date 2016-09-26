@@ -1,7 +1,15 @@
 var repCountTracker = 0;
 var setCountTracker = 1;
+var id;
 
 function validateInputs(){
+	
+	clearInterval(id);
+	repCountTracker = 0;
+	setCountTracker = 1;
+	document.getElementById("context").innerHTML = 'seconds of <span class="activity" id="activity">exercise</span> <span class="repContext" id="repContext"></span> of set <span class="setContext" id="setContext"></span>'; 
+	document.getElementById("repContext").innerHTML = repCountTracker;
+	document.getElementById("setContext").innerHTML = setCountTracker;
 	
 	//Initialise check variables as false to ensure checks are made.
 	var workTimeCheck = false;
@@ -67,7 +75,7 @@ function startTimer(){
 
 function workTimerFunc(workSeconds,restTimer,repCount,repCountTracker,setCount,setCountTracker){
 	
-	var id;
+	//var id;
 	var workCounter = workSeconds;
 	
 	document.getElementById("timerCount").style.fontSize = "200px";
@@ -88,7 +96,7 @@ function workTimerFunc(workSeconds,restTimer,repCount,repCountTracker,setCount,s
 	
 function restTimerFunc(restSeconds,repCount,workSeconds,repCountTracker,setCount,setCountTracker){
 	
-	var id;
+	//var id;
 	var restCounter = restSeconds;
 	
 	document.getElementById("timerCount").style.fontSize = "200px";
