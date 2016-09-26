@@ -8,6 +8,12 @@ body {
   background-color: #f7f7f7;
   line-height: 1.5;
   color: #262626;
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;;
 }
 
 .container-fluid {
