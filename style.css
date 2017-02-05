@@ -6,6 +6,15 @@ body {
 	color: #B3B3B3;
 }
 
+#particles-js {
+	z-index: -1;
+	position: absolute;
+	display: block;
+	width: 98%;
+	height: 98%;
+	margin: 0 auto;
+}
+
 ::selection {
 	background: #404040;
 	color: #f2f2f2;
@@ -36,6 +45,7 @@ h1 {
 	color: #B3B3B3;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	z-index: 1;
 }
 
 .nav a{
