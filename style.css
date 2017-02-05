@@ -47,7 +47,7 @@ h1 {
 
 .nav a:hover {
 	color: #b30000;
-	letter-spacing: 8px;
+	letter-spacing: 4px;
 }
 
 .nav a:active {
@@ -92,9 +92,8 @@ ul {
 }
 
 .content-wrap section {
-	opacity: 0;
+	visibility: hidden;
 	flex: 1;
-	transition: all 0.6s ease-in-out;	
 }
 
 @media (max-width: 1200px) {
