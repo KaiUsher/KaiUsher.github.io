@@ -20,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 90vh;
+	height: 80vh;
 }
 
 header {
@@ -150,7 +150,7 @@ ul {
 	}
 }
 
-@media (max-height: 855px) {
+@media (max-height: 800px) {
 	
 	.content-wrap {
 		font-size: 17px;
