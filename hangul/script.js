@@ -1,5 +1,5 @@
-var chars = ["B / P","D / T","G / K","H","J","R / L","M","N","S","K","T","P","Ch","ng","O","A","U","E","eu","eo"]
-var koreanChars = ["ㅂ","ㄷ","ㄱ","ㅎ","ㅈ","ㄹ","ㅁ","ㄴ","ㅅ","ㅋ","ㅌ","ㅍ","ㅊ","ㅇ","ㅗ","ㅏ","ㅜ","ㅣ","ㅡ","ㅓ"]
+var chars = ["B / P","D / T","G / K","H","J","R / L","M","N","S","K","T","P","Ch","ng","O / yo","A / ya","U / yu","E","eu","eo / yeo"]
+var koreanChars = ["ㅂ","ㄷ","ㄱ","ㅎ","ㅈ","ㄹ","ㅁ","ㄴ","ㅅ","ㅋ","ㅌ","ㅍ","ㅊ","ㅇ","ㅗ/ㅛ","ㅏ/ㅑ","ㅜ/ㅠ","ㅣ","ㅡ","ㅓ/ㅕ"]
 var sounds = ["This character has a similar sound to B when it's the first character in a syllable, or a P sound when it's last. Remember this by noting the character looks like a bed or a pot of food.",
 				"This character has a similar sound to D when it's the first character in the syllable, or a T sounds when it's last. It looks quite like the pane in a door or a single tooth!",
 				"This character has a similar sound to G when it's first in the syllable, or a K sound when last. It looks a lot like a gun, which could be used to kill.",
@@ -14,12 +14,12 @@ var sounds = ["This character has a similar sound to B when it's the first chara
 				"This character has a similar sound to P in English. This character can double up as a perfect 'part 2' symbol.",
 				"This character has a similar sound to Ch in English. What building has a cross on the roof? A Church!",
 				"This character has a similar sound to ng in English, but only at the end of a syllable. Otherwise, is makes no sound.",
-				"This character has the sound of a 'long O' in English, similar to the O sound in 'old'.",
-				"This character has the sound of a 'short A' in English, similar to the A sound in iPad.",
-				"This character has the sound of a 'long U' in English, similar to the 'ew' sound in 'newspaper'.",
+				"This character has the sound of a 'long O' in English, similar to the O sound in 'old'. With a double stroke, simply add a 'y' sound to the start.",
+				"This character has the sound of a 'short A' in English, similar to the A sound in iPad. With a double stroke, simply add a 'y' sound to the start.",
+				"This character has the sound of a 'long U' in English, similar to the 'ew' sound in 'newspaper'. With a double stroke, simply add a 'y' sound to the start.",
 				"This character has the sound of a 'long E' in English, similar to the 'ee' of tree.",
 				"This character has the sound similar to the 'double O' in 'brook'.",
-				"This character has the sound of a 'short O' in English, similar to the O sound in iPod."]
+				"This character has the sound of a 'short O' in English, similar to the O sound in iPod. With a double stroke, simply add a 'y' sound to the start."]
 var emojis = ["🛏️ / 🍲","🚪 / 😀","🔫 / ☠️","🤠","🏺","🐍","😲","👃","⛰️","🗝️","😀","","⛪","","👵","","📰","🌳","🏞️","🎧",]
 
 function loadChars(){
