@@ -1,88 +1,39 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Kai Usher">
-		<meta name="description" content="Kai Usher | Minimalist, front-end web development.">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="logo.ico">
-		<title>Kai Usher | Student // Web Developer // Human</title>
-	</head>
-	
-	<body>
-	
-		
-		
-		<div class="container">
-		
-		<div id="particles-js"></div>
-		
-			<header>
-				<h1 class="logo">&lt; KAI USHER /&gt;</h1>
-				<nav class="nav">
-					<ul>
-						<li>
-							<a href="#about" onClick="makeVisible('about');">ABOUT</a>
-						</li>
-						<li>
-							<a href="#ethos" onClick="makeVisible('ethos');">ETHOS</a>
-						</li>
-						<li>
-							<a href="#skills" onClick="makeVisible('skills');">SKILLS</a>
-						</li>
-						<li>
-							<a href="#work" onClick="makeVisible('work');">WORK</a>
-						</li>
-						<li>
-							<a href="#contact" onClick="makeVisible('contact');">CONTACT</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div class="content-wrap" id="content-wrap">
-				<section class="about" id="about" style="z-index: 1">
-					<p>Hello, my name is Kai. <br />
-					I enjoy bringing ideas into reality, because otherwise an idea is worthless. <br />
-					I'm not all web-talk though, I'm a human just like you, who enjoys music, exercise, and positivity.</p>
-				</section>
-				<section class="ethos" id="ethos" style="z-index: 2">
-					<p>I believe that less is more. <br />
-					No matter what the need or end-goal, it will always focus on giving the user what they want as quickly as possible. <br />
-					That doesn't mean compromises, oh no, that means logical design choices to produce a good-looking, simple, but effective site.</p>
-				</section>
-				<section class="skills" id="skills" style="z-index: 3">
-					<p>I am studying <strong>COMPUTER SCIENCE w/ ARTIFICIAL INTELLIGENCE</strong> at Loughborough University and loving it. <br />
-					My main interest is minimalist front-end development; my coding skills are focused around <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong> and <strong>JQuery</strong>.</p>
-				</section>
-				<section class="work" id="work" style="z-index: 4">
-					<p>Here is my previous work.<br />
-					• <a href="hiit/index.html">HIIT Timer</a><br />
-					• <a href="hangul/index.html">Korean Alphabet [WIP]</a><br />
-					Yes, I realise it's sparse. Give me a chance; I'm currently 1/2 of the way up University Mountain.</p>
-				</section>
-				<section class="contact" id="contact" style="z-index: 5">
-					<p>Donate me some of your words and you'll get some in return. I'm nice like that because I care.<br />
-					<a href="https://twitter.com/Kai_Usher">Twitter</a> // <a href="https://www.instagram.com/kai_usher/">Instagram</a> // <a href="mailto:kai.usher97@gmail.com">Email</a></p>
-				</section>
-			</div>
-		</div>
-		
-		<script type="text/javascript" src="javascript.js"></script>
-		<script src="particles.js"></script>
-		<script src="app.js"></script>
-		
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!doctype html>
+<html lang="en">
 
-			  ga('create', 'UA-72238685-1', 'auto');
-			  ga('send', 'pageview');
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		</script>
-	</body>
+  <title>Kai Usher Design</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--<div id="root">
+      <div id="test" class="weather">
+        <p id="location"></p>
+        <p id="type"></p>
+        <p id="temp"></p>
+      </div>
+  </div>-->
+  <div class="container">
+    <div class="root">
+        <h2>new website</h2>
+        <div class="logo">
+            <img src="assets/images/logo_white.svg" alt="Smiley face" height="333" width="500">
+        </div>
+        <h2>coming soon</h2>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
 </html>
