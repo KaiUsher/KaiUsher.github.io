@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Kai Usher</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <header class="header">
+
+        <a class="logo-link" href="./index.html">
+        <div class="logo">
+          <img src="logo_kud_new.svg" alt="logo"></img>
+        </div>
+        </a>
+
+        <div class="links">
+          <a class="link not-active" href="index.html">WORK</a>
+          <a class="link-mid active" href="about.html">ABOUT</a>
+          <a class="link not-active" href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
+        </div>
+
+        <div id="nav-icon4" onclick="openNav(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+    </header>
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="scroll-to-top" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- The overlay -->
+    <div id="myNav" class="nav-overlay">
+      
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">WORK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
+      </div>
+      
+    </div>
+
+    <section class="landing about-landing">
+      <div class="intro">
+          <h1>About me.</h1>
+          <h2>From Notepad to now.</h2>
+      </div>
+  </section>
+
+  <div class="underline underline-yellow"></div>
+
+  <div class="main-section about-section">
+
+      <div class="inner-section">
+        <div class="section-content">
+          <p class="large-text">
+            <span class="about-highlight">Who am I?</span><br>
+            A brief history of
+            me.
+          </p>
+          <p class="subheading-text">tl;dr</p>
+          <p>
+            Degree in Computer Science and Artificial Intelligence + passion for design = this website + <a href="CV.pdf">this</a> CV.
+          </p>
+          <p class="subheading-text">The spark</p>
+          <p>
+            Whenever I think back to write something like this, I always end up with one particular moment which 
+            led me down the path I’ve chosen to take. Back in the first year of secondary school, around age 12, 
+            I remember opening the default Windows Notepad app to follow along with a HTML and CSS tutorial I found 
+            online.
+          </p>
+          <p>
+            It was at that moment where I discovered my passion of taking a seemingly simple idea, writing a few 
+            lines of code and producing a tangible end product.
+          </p>
+          <p>
+            Almost 10 years later, here I am writing another about me page, however this time I like to 
+            believe it looks a lot better.
+          </p>
+          <p class="subheading-text">Education</p>
+          <p>
+            I took that interest all the way up to university where I’m currently in the final year of my degree studying Computer Science and
+            Artificial Intelligence at Loughborough University.
+          </p>
+          <p class="subheading-text">Experience</p>
+          <p>
+            As part of my degree, I recently completed a year working at IBM as a blockchain software developer. This role involved developing
+            production-ready open-source software; I was part of the complete development process from planning and coding to testing and deployment.
+          </p>
+          <p>
+            Below is one of the deliverables I completed in the year - the IBM Blockchain Platform: Develop webpage. This was a collaboration with the 
+            design team, offering managers and marketing teams. I coded the front-end of the site whilst working to a close deadline ready for launch.
+          </p>
+          <img src="ibmdevworks.png">
+          <p>
+            It was at IBM where I formally decided to take a slightly different career path and focus on pursuing my passion for design. Seeing how design
+            has become such an integral part of how IBM operate, through hands-on work with the design team to being a driver in a research workshop, outlined
+            the direction I want to take.
+          </p>
+          <p>
+            Upon returning to uni for my third year I had to create a poster summarising my year in industry. You can view the poster (which won the prize for best 
+            poster) <a href="IBMposter.pdf">here</a>.
+          </p>
+          <p class="subheading-text">A passion for design</p>
+          <p>
+            The one trend which has always been prevalent in my projects is that I get the most buzz from designing 
+            the UI, coding the front-end and making the graphics. For as long as I can remember I’ve filled my spare 
+            time with creative outlets, from drawing tattoos for friends and family to designing logos for real 
+            businesses and clients.
+          </p>
+          <p>
+            After being introduced to user research within projects at IBM and through work at university, I became fascinated with gathering user data and 
+            analyse it to find trends and insights which in turn can lead to more useful design decisions. This topic is at the core of my current project; using
+            the vast amounts of data linked to a user's Spotify account and saved songs to accurately predict music for multiple people's tastes.
+          </p>
+          <p>
+            Therefore, taking the step to combine my technical education in Computer Science 
+            and my passion for design has resulted in you reading this portfolio, and I hope you find something you like!
+          </p>
+          <p class="subheading-text">CV</p>
+          <p>
+            For a more formal introduction you can download my CV <a href="CV.pdf">here</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  <div class="underline underline-yellow"></div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+          document.getElementById("scroll-to-top").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+      function myFunction(x) {
+        x.classList.toggle("open");
+        document.getElementById("mobile-nav").classList.toggle("open");
+      }
+
+      /* Open when someone clicks on the span element */
+      function openNav(x) {
+        x.classList.toggle("open");
+        document.getElementById("myNav").classList.toggle("open");
+        document.getElementById("body").classList.toggle("open");
+      }
+    </script>
+
+  </body>
+</html>

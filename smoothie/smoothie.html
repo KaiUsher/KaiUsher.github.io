@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="../logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Kai Usher</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <header class="header">
+
+        <a class="logo-link" href="../index.html">
+        <div class="logo">
+          <img src="../logo_kud_new.svg" alt="logo"></img>
+        </div>
+        </a>
+
+        <div class="links">
+          <a class="link active-smoothie" href="../index.html">WORK</a>
+          <a class="link-mid not-active" href="../about.html">ABOUT</a>
+          <a class="link not-active" href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
+        </div>
+
+        <div id="nav-icon4" onclick="openNav(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+    </header>
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="scroll-to-top" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- The overlay -->
+    <div id="myNav" class="nav-overlay">
+      
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="../index.html">WORK</a>
+        <a href="../about.html">ABOUT</a>
+        <a href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
+      </div>
+      
+    </div>
+
+    <section class="landing smoothie-landing">
+        <div class="intro">
+            <h1>Smoothie.</h1>
+            <h2>A web app to bring people<br>together through music.</h2>
+        </div>
+    </section>
+
+    <div class="underline underline-purple"></div>
+
+    <div class="main-section">
+
+      <div class="inner-section smoothie-section">
+        <div class="section-content">
+          <p class="large-text">
+            <span class="smoothie-highlight">The idea</span><br>
+            Using AI to generate playlists which
+            appeal to multiple user's unique music tastes.
+          </p>
+          <p>
+            This project is currently a work-in-progess that will be finished by the end of April 2019.
+            Below are some screenshots from the current iteration of the website - I will endeavour to 
+            update this project as it progresses.
+          </p>
+          <img src="images/smoothie1.png">
+          <img src="images/smoothie2.png">
+          <img src="images/smoothie3.png">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="underline underline-purple"></div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+          document.getElementById("scroll-to-top").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+      function myFunction(x) {
+        x.classList.toggle("open");
+        document.getElementById("mobile-nav").classList.toggle("open");
+      }
+
+      /* Open when someone clicks on the span element */
+      function openNav(x) {
+        x.classList.toggle("open");
+        document.getElementById("myNav").classList.toggle("open");
+        document.getElementById("body").classList.toggle("open");
+      }
+    </script>
+
+  </body>
+</html>
