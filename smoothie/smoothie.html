@@ -34,7 +34,7 @@
         <div class="links">
           <a class="link active-smoothie" href="../index.html">WORK</a>
           <a class="link-mid not-active" href="../about.html">ABOUT</a>
-          <a class="link not-active" href="mailto:kaiusherdesign@gmail.com?Subject=Hello!">CONTACT</a>
+          <a class="link not-active" href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
         </div>
 
         <div id="nav-icon4" onclick="openNav(this)">
@@ -79,13 +79,65 @@
             appeal to multiple user's unique music tastes.
           </p>
           <p>
-            This project is currently a work-in-progess that will be finished by the end of April 2019.
-            Below are some screenshots from the current iteration of the website - I will endeavour to 
-            update this project as it progresses.
+            This project was the result of my university dissertation. Below are a number of screenshots covering the main 
+            screens of the system and a brief explanation of the technical implementation.
           </p>
-          <img src="images/smoothie1.png">
-          <img src="images/smoothie2.png">
-          <img src="images/smoothie3.png">
+          <p>
+            To read the full dissertation <a class="smoothie-link" href="smoothie-dissertation.pdf" target="_blank">click here</a>.
+          </p>
+          <img class="has-caption" src="images/smoothie1.png">
+          <p class="img-caption">
+            The initial view/screen of Smoothie 
+          </p>
+          <p>
+            The system uses the Spotify API to authenticate the user and gain access to their playlist data. Once authenticated, 
+            the user is then redirected to the first playlist input screen.
+          </p>
+          <img class="has-caption" src="images/smoothie2.png">
+          <p class="img-caption">
+            One of two playlist input screens 
+          </p>
+          <p>
+            Each playlist on Spotify can be indentified using a URI, which the user can simply copy and paste from their Spotify client. 
+            Upon pasting the URI into the input field, a call is made to the Spotify API to retrieve the playlist data, and a preview 
+            is shown in order for the user to confirm that the correct playlist has been used.
+          </p>
+          <img class="has-caption" src="images/smoothie3.png">
+          <p class="img-caption">
+            A playlist input screen following the user entering a playlist URI 
+          </p>
+          <p>
+            Once two playlists have been entered into the system, the user is presented with an options screen where they can fine-tune the 
+            details for the generated playlist. 
+          </p>
+          <img class="has-caption" src="images/smoothie5.png">
+          <p class="img-caption">
+            Settings screen where the user can customise their generated playlist 
+          </p>
+          <p>
+            After the settings have been configured, the AI gets to work and a blended playlist is generated. The high-level logic of the system is as follows.
+          </p>
+          <p>
+            Each playlist is individually analysed based on the audio features of each song within it, and a 
+            neural network is trained with the intention to be able to understand the playlist owner's music taste. A song can then be suggested and the model can 
+            predict whether or not the owner of the playlist would like it or not. This training is done on both of the provided playlists.
+          </p>
+          <p>
+            Once the training is complete, Smoothie then begins to input songs to the model and a prediction 
+            for which playlist is more likely to contain that song is returned. If the model is unable to predict a clear winner for which owner is most likely to have 
+            the song in their playlist it can be assumed that the song will appeal to both owners. Thus, that song is added to the new playlist.
+          </p>
+          <p>
+            This process is repeated until a playlist of the required length is generated.
+          </p>
+          <img class="has-caption" src="images/smoothie4.png">
+          <p class="img-caption">
+            The final screen of Smoothie displaying the generated playlist 
+          </p>
+          <p>
+            Overall, Smoothie is a very effective recommender system. The generated playlists are a good blend of both input playlists and the user's who have tested it 
+            found it to be simple to use and engaging throughout.
+          </p>
         </div>
       </div>
 

@@ -65,12 +65,16 @@ hr {
   border-bottom: 15px red solid;
 }
 
-.underline-yellow {
+.underline-orange {
   border-bottom: 15px orange solid;
 }
 
+.underline-grey {
+  border-bottom: 15px lightslategrey solid;
+}
+
 .underline-green {
-  border-bottom: 15px mediumseagreen solid;
+  border-bottom: 15px #4ABF6C solid;
 }
 
 .underline-blue {
@@ -159,6 +163,10 @@ hr {
     border-bottom: 3px red solid;
   }
 
+  .active-racecheck {
+    border-bottom: 3px #4ABF6C solid;
+  }
+
   .active-kcaltrax {
     border-bottom: 3px lightskyblue solid;
   }
@@ -168,7 +176,7 @@ hr {
   }
 
   .active-logos {
-    border-bottom: 3px mediumseagreen solid;
+    border-bottom: 3px lightslategrey solid;
   }
 
 /*HAMBURGER*/
@@ -339,6 +347,14 @@ hr {
     background-image: url("homebg.jpg");
   }
 
+  .racecheck-landing {
+    background-image: url("racecheck_thumb.jpg");
+  }
+
+  .racecheck-landing .intro h1 {
+    color: #4ABF6C;
+  }
+
   .supreme-landing {
     background-image: url("supreme_thumb.jpg");
   }
@@ -368,7 +384,7 @@ hr {
   }
 
   .logos-landing .intro h1 {
-    color: mediumseagreen;
+    color: lightslategrey;
   }
 
   @media only screen and (max-width: 1068px) {
@@ -425,6 +441,11 @@ hr {
     background-position-y: 30%;
   }
 
+  .racecheck-summary {
+    background-image: url("racecheck_thumb.jpg");
+    background-position-y: 65%;
+  }
+
   .supreme-summary {
     background-image: url("supreme_thumb.jpg");
     background-position-y: 20%;
@@ -462,7 +483,7 @@ hr {
   .work-link {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
   }
 
   .work-summary:hover .overlay {
@@ -501,6 +522,10 @@ hr {
     background: mediumpurple;
   }
 
+  .racecheck-overlay {
+    background: #4ABF6C;
+  }
+
   .supreme-overlay {
     background: red;
   }
@@ -510,7 +535,7 @@ hr {
   }
 
   .logos-overlay {
-    background: mediumseagreen;
+    background: lightslategrey;
   }
 
   .title {
@@ -599,7 +624,7 @@ hr {
 }
 
 .inner-section:nth-child(1) {
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 
 @media only screen and (max-width: 735px) {
@@ -689,23 +714,27 @@ hr {
   margin-top: 1rem;
 }
 
-.kcaltrax-highlight {
+.kcaltrax-highlight, .kcaltrax-link {
   color: lightskyblue;
 }
 
-.supreme-highlight {
+.supreme-highlight, .supreme-link {
   color: red;
 }
 
-.smoothie-highlight {
+.racecheck-highlight, .racecheck-link {
+  color: #4ABF6C;
+}
+
+.smoothie-highlight, .smoothie-link {
   color: mediumpurple;
 }
 
-.logos-highlight {
-  color: mediumseagreen;
+.logos-highlight, .logos-link {
+  color: lightslategrey;
 }
 
-.about-highlight {
+.about-highlight, .about-link {
   color: orange;
 }
 
@@ -1211,4 +1240,28 @@ hr {
     margin-top: -10rem;
     margin-left: 10rem;
   }
+}
+
+.racecheck-ul li {
+  margin-bottom: 10px;
+}
+
+.review-reactions, .widget-img {
+  width: 70% !important;
+}
+
+@media only screen and (max-width: 735px) {
+  .review-reactions, .widget-img {
+    width: 95%;
+  }
+}
+
+.has-caption {
+  margin-bottom: 5px !important;
+}
+
+.img-caption {
+  font-size: smaller;
+  text-align: center;
+  margin-bottom: 5em;
 }
