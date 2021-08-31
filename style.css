@@ -24,9 +24,19 @@ h1 {
     margin: 0;
 }
 
+.title-summary h1 {
+  font-size: 4em;
+}
+
 h2 {
     font-size: 2em;
     margin: 0;
+}
+
+.title-summary h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-top: 0;
 }
 
 p {
@@ -83,6 +93,10 @@ hr {
 
 .underline-purple {
   border-bottom: 15px mediumpurple solid;
+}
+
+.underline-yellow {
+  border-bottom: 15px #fbbf00 solid;
 }
 
 * {
@@ -177,6 +191,10 @@ hr {
 
   .active-logos {
     border-bottom: 3px lightslategrey solid;
+  }
+
+  .active-pq {
+    border-bottom: 3px #fbbf00 solid;
   }
 
 /*HAMBURGER*/
@@ -391,6 +409,14 @@ hr {
     color: lightslategrey;
   }
 
+  .pq-landing {
+    background-image: url("pq_thumb.jpg");
+  }
+
+  .pq-landing .intro h1 {
+    color: #fbbf00;
+  }
+
   @media only screen and (max-width: 1068px) {
     .about-landing {
       background-position-x: 30%;
@@ -443,6 +469,11 @@ hr {
   .smoothie-summary {
     background-image: url("smoothie_thumb.jpg");
     background-position-y: 30%;
+  }
+
+  .pq-summary {
+    background-image: url("pq_thumb.jpg");
+    background-position-y: 65%;
   }
 
   .rfo-summary {
@@ -535,6 +566,10 @@ hr {
     background: #4ABF6C;
   }
 
+  .pq-overlay {
+    background: #fbbf00;
+  }
+
   .supreme-overlay {
     background: red;
   }
@@ -574,11 +609,17 @@ hr {
     justify-content: center;
     flex-direction: column;
     margin: -15rem 0 0 0;
-    color: rgb(238, 238, 238);
+    color: rgb(247, 247, 247);
   }
 
   .intro h1 {
       color: #fff;
+      font-size: 4.5em;
+  }
+
+  .intro h2 {
+    font-size: 1.7em;
+    font-weight: 500;
   }
 
 @media only screen and (max-width: 1068px) {
@@ -733,6 +774,10 @@ hr {
 
 .racecheck-highlight, .racecheck-link {
   color: #4ABF6C;
+}
+
+.pq-highlight, .pq-link {
+  color: #fbbf00;
 }
 
 .smoothie-highlight, .smoothie-link {
@@ -926,6 +971,10 @@ hr {
   box-shadow: 0px 0px 13px 0px rgba(222,222,222,1);
 }
 
+.rfo-section .no-shadow-img {
+  box-shadow: none !important;
+}
+
 .nav-redesign {
   display: flex;
   margin-bottom: 5rem;
@@ -977,7 +1026,7 @@ hr {
   font-size: 1.3em;
 }
 
-.kcaltrax-quote {
+.kcaltrax-quote, .pq-quote {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
   font-size: 1.5em;
@@ -990,8 +1039,12 @@ hr {
   color: lightskyblue;
 }
 
+.pq-quote .speechmark {
+  color: #fbbf00;
+}
+
 @media only screen and (max-width: 735px) {
-  .kcaltrax-quote {
+  .kcaltrax-quote, .pq-quote {
     font-size: 1.1em;
   }
 }
