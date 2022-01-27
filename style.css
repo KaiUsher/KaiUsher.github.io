@@ -22,10 +22,13 @@ body {
 h1 {
     font-size: 6em;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title-summary h1 {
   font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 4.5rem;
 }
 
 h2 {
@@ -152,7 +155,7 @@ hr {
   }
 
   .link-mid {
-    margin: 0 3rem 0 3rem;
+    margin: 0 2rem 0 2rem;
   }
 
   @media only screen and (max-width: 735px) {
@@ -342,7 +345,7 @@ hr {
 }
 
   .landing {
-    height: calc(100vh - 6.5rem);
+    height: calc(100vh - 8rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,7 +515,7 @@ hr {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
   }
 
   .overlay {
@@ -534,7 +537,7 @@ hr {
   }
 
 .work-summary .title-summary h2{
-  color: rgb(238, 238, 238);
+  color: rgb(245, 245, 245);
 }
 
 @media only screen and (max-width: 1068px) {
@@ -550,10 +553,11 @@ hr {
 @media only screen and (max-width: 735px) {
   .work-summary .title-summary h1{
     font-size: 3em;
+    line-height: 3.2rem;
   }
 
   .work-summary .title-summary h2{
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -597,10 +601,11 @@ hr {
     margin: 0 auto;
     z-index: 0;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .title-summary h2 {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .intro {
@@ -609,7 +614,7 @@ hr {
     justify-content: center;
     flex-direction: column;
     margin: -15rem 0 0 0;
-    color: rgb(247, 247, 247);
+    color: rgb(250, 250, 250);
   }
 
   .intro h1 {
@@ -618,8 +623,9 @@ hr {
   }
 
   .intro h2 {
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 500;
+    width: 45%;
   }
 
 @media only screen and (max-width: 1068px) {
@@ -628,22 +634,23 @@ hr {
   }
 
   .intro h2 {
-    font-size: 2.5em;
+    font-size: 1.3em;
   }
 }
 
 @media only screen and (max-width: 735px) {
 
   .intro {
-    margin: -20rem 0 0 0;
+    margin: -12rem 0 0 0;
   }
 
   .intro h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   .intro h2 {
-    font-size: 2em;
+    font-size: 1.2em;
+    width: 75%;
   }
 }
 
@@ -744,6 +751,7 @@ hr {
   font-weight: 700;
   margin-bottom: 3rem;
   line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -973,6 +981,10 @@ hr {
 
 .rfo-section .no-shadow-img {
   box-shadow: none !important;
+}
+
+.rfo-section .has-caption {
+  border-radius: 10px;
 }
 
 .nav-redesign {
@@ -1223,7 +1235,7 @@ hr {
 
 /* When you mouse over the navigation links, change their color */
 .nav-overlay a:hover, .overlay a:focus {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
