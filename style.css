@@ -1248,7 +1248,7 @@ hr {
   }
 }
 
-.wireframe-container {
+.wireframe-container, .award-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1259,6 +1259,23 @@ hr {
   width: 120%;
   overflow: visible;
   margin: 2em 0;
+}
+
+.award-container img {
+  width: 90%;
+  overflow: visible;
+  margin: 2em 0;
+}
+
+.widget-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-img-container img {
+  width: 33%;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 1068px) {
