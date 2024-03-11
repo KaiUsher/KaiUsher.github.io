@@ -585,11 +585,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 15px 0 0 0;
 }
 
 .ph-tag {
-    margin: 0 5px;
+    margin: 0 5px 5px 0;
     border-radius: 20px;
     background-color: rgb(247, 246, 244);
     border: 1px solid #E7E8E9;
@@ -729,6 +730,7 @@ p {
 @media screen and (max-width: 600px) {
     .sg-left {
         width: 100%;
+        padding: 0;
     }
 
     .sg-right {
