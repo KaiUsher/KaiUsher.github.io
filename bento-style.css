@@ -57,8 +57,13 @@ p {
 }
 
 .bc-rectangle {
-    grid-column: span 2/span 2;
     aspect-ratio: 2;
+}
+
+@media screen and (min-width: 600px) {
+    .bc-rectangle {
+        grid-column: span 2/span 2;
+    }
 }
 
 .bc-square {
