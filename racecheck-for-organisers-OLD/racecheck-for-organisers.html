@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131555289-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131555289-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="../logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Kai Usher</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <header class="header">
+
+        <a class="logo-link" href="../index.html">
+        <div class="logo">
+          <img src="../logo_kud_new.svg" alt="logo"></img>
+        </div>
+        </a>
+
+        <div class="links">
+          <a class="link active-racecheck" href="../index.html">WORK</a>
+          <a class="link-mid not-active" href="../about.html">ABOUT</a>
+          <a class="link not-active" href="mailto:kai.usher97@gmail.com?Subject=Hello!">CONTACT</a>
+        </div>
+
+        <div id="nav-icon4" onclick="openNav(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+    </header>
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="scroll-to-top" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- The overlay -->
+    <div id="myNav" class="nav-overlay">
+      
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="../index.html">WORK</a>
+        <a href="../about.html">ABOUT</a>
+        <a href="mailto:kaiusherdesign@gmail.com?Subject=Hello!">CONTACT</a>
+      </div>
+      
+    </div>
+
+    <section class="landing rfo-landing">
+        <div class="intro">
+            <h1>Racecheck for<br>Organisers</h1>
+            <h2>A comprehensive feedback<br>management dashboard.</h2>
+        </div>
+    </section>
+
+    <div class="underline underline-green"></div>
+
+    <div class="main-section rfo-section">
+
+      <div class="inner-section">
+        <div class="section-content">
+          <p class="large-text">
+            <span class="racecheck-highlight">WIP</span><br>
+            All-in-one review collection and management platform.
+          </p>
+          <p>
+            Racecheck for Organisers is the suite of tools which enables mass-participation event organisers to collect, manage and impactfully display their feedback. From analytics reports to customisable widgets driving sales on their own conversion channels, Raceheck for Organisers has proven to be invaluable based on organiser feedback.
+          </p>
+          <p>
+            The platform is still in active development, so I am currently in the process of writing up a full review outlining the entire product development process; 
+            including initial research, sketches, wireframing, mock ups and everything in between.
+          </p>
+          <p>
+            In the meantime, you can get a glimpse of the finished project by <a class="racecheck-link" href="https://organisers.racecheck.com" target="_blank">clicking here</a>, and checking out some high-fidelity mock-ups below.
+          </p>
+          <img class="has-caption" src="images/ORGDASH-Events22.png">
+          <p class="img-caption">
+            Organisers can add and manage their full catalogue of past, current and future events. 
+          </p>
+          <img class="has-caption" src="images/ORGDASH-ReviewFeed22.png">
+          <p class="img-caption">
+            Reply to, share, and manage reviews in a clean, customisable and organised feed. 
+          </p>
+          <img class="has-caption" src="images/ORGDASH-SocialContent22.png">
+          <p class="img-caption">
+            Generate and share social content from reviews, directly in the dashboard. 
+          </p>
+          <img class="has-caption" src="images/ORGDASH-Widget22.png">
+          <p class="img-caption">
+            Easily customise, deploy and intialise sales tracking for Racecheck Review Boxes. No tech support required.
+          </p>
+          <img class="has-caption" src="images/ORGDASH-Analytics22.png">
+          <p class="img-caption">
+            Insightful reports take the guesswork away from analysing event and Review Box performance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="underline underline-green"></div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+          document.getElementById("scroll-to-top").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+      function myFunction(x) {
+        x.classList.toggle("open");
+        document.getElementById("mobile-nav").classList.toggle("open");
+      }
+
+      /* Open when someone clicks on the span element */
+      function openNav(x) {
+        x.classList.toggle("open");
+        document.getElementById("myNav").classList.toggle("open");
+        document.getElementById("body").classList.toggle("open");
+      }
+    </script>
+
+  </body>
+</html>
