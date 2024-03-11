@@ -125,7 +125,7 @@ p {
     box-sizing: border-box;
 }
 
-.bento-item:hover .bc-i-content > .bi-header > a > img {
+.bc-i-content:hover > .bi-header > a > img {
     opacity: 1;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -193,7 +193,7 @@ p {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 30px;
+    padding: 25px 35px 30px 25px;
     background-color: #fff;
 }
 
@@ -355,6 +355,7 @@ p {
     font-size: 50px;
     margin: 0;
     position: absolute;
+    transition: all ease-out .2s;
 }
 
 .memoji-container > span:nth-of-type(1) {
@@ -372,6 +373,20 @@ p {
     right: 15%;
     top: 20%;
     transform: rotate(15deg);
+}
+
+.memoji-container:hover > span:nth-of-type(1) {
+    left: 13%;
+    top: 18%;
+}
+
+.memoji-container:hover > span:nth-of-type(2) {
+    top: 8%;
+}
+
+.memoji-container:hover > span:nth-of-type(3) {
+    right: 13%;
+    top: 18%;
 }
 
 /* .me:hover > .bc-i-content {
