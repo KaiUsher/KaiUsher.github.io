@@ -270,7 +270,7 @@ p {
     }
 
     .bento-hero > .bc-i-content {
-        padding: 0px 15px 30px 15px;
+        padding: 0px 5px 25px 5px;
     }
 }
 
@@ -358,6 +358,13 @@ p {
     left: 4px;
 }
 
+@media screen and (max-width: 750px) {
+
+    .home-nav-container > .hnc-content {
+        margin-left: -8px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .home-nav-container {
         width: calc(100% - 65px);
@@ -370,6 +377,7 @@ p {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
+        margin-left: 3px;
     }
 }
 
