@@ -339,6 +339,7 @@ p {
     border-radius: 5px;
     position: relative;
     transition: all ease-out .15s;
+    white-space: nowrap;
 }
 
 .home-nav-container > .hnc-content > .ni-active {
@@ -367,8 +368,18 @@ p {
 
     .home-nav-container > .hnc-content {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .home-nav-container > .hnc-content > .nav-item {
+        padding: 4px 8px;
+    }
+
+    .home-nav-container > .hnc-content > .nav-item > span {
+        display: none;
     }
 }
 
@@ -638,7 +649,7 @@ p {
 /* PROJECT PAGE */
 
 .project-container {
-    margin: 54px auto 0 auto;
+    margin: 50px auto 0 auto;
     max-width: 920px;
     padding: 15px;
     border-radius: 15px;
@@ -674,9 +685,9 @@ p {
     text-decoration: none;
     font-family: 'Figtree';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     color: #1E1E1E;
-    padding: 3px 6px;
+    padding: 2px 4px;
     border-radius: 8px;
     width: calc(100% - 30px);
     width: fit-content;
