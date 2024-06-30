@@ -151,7 +151,7 @@ p {
     margin: 0;
 }
 
-.bi-header > p > span {
+.bi-header > p > span:first-of-type {
     color: rgba(163, 163, 163, 0.50);
     margin: 0 8px;
 }
@@ -668,6 +668,18 @@ p {
 
 .bi-playlist:hover {
     background-color: rgb(255, 246, 225);
+}
+
+.music-details {
+    display: none;
+}
+
+.reading:hover .music-tag {
+    display: none;
+}
+
+.reading:hover .music-details {
+    display: inline;
 }
 
 /* .reading:hover > .bc-i-content {
