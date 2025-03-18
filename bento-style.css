@@ -119,6 +119,24 @@ p {
 .reading { grid-area: 4 / 4 / 5 / 5; } 
 .bento-hero { grid-area: 3 / 2 / 5 / 4; }  */
 
+.bento-divider {
+    grid-column: 1 / -1;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #eeeeee; 
+    line-height: 0.4em;
+    margin: 10px 0 20px
+}
+
+.bento-divider > span {
+    margin: 0;
+    background-color: #fff;
+    padding: 0 10px 0 15px;
+    font-family: 'Figtree';
+    color: #bebebe;
+    font-size: 18px;
+}
+
 .bento-item {
     /* height: 100%;
     width: 100%; */
@@ -538,6 +556,14 @@ p {
     color: #A3A3A3;
     font-family: 'Figtree';
     font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.bi-c-reading > .book-copy > .book-rating {
+    color: #A3A3A3;
+    font-family: 'Figtree';
+    font-size: 12px;
     font-weight: 400;
     margin: 0;
 }
