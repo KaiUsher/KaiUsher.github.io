@@ -306,6 +306,10 @@ p {
     color: #3574cf;
 }
 
+.bento-hero > .bc-i-content > h1 > .hero-subtitle > .hero-slowfire:hover {
+    color: #c4632e;
+}
+
 .bento-hero > .bc-i-content > h1 > .emoji-wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
@@ -463,6 +467,14 @@ p {
 
 .tribe:hover > .bc-i-content {
     background-color: #FFF5DB;
+}
+
+.sf-asana > .bc-i-content {
+    background-color: #faede0;
+}
+
+.sf-asana:hover > .bc-i-content {
+    background-color: rgb(250, 232, 212);
 }
 
 .me > .bc-i-content {
